@@ -6,7 +6,7 @@
   <link href="https://cyanky.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyanky.github.io/"/>
-  <updated>2022-05-29T10:29:31.747Z</updated>
+  <updated>2022-05-30T07:07:44.761Z</updated>
   <id>https://cyanky.github.io/</id>
   
   <author>
@@ -21,15 +21,12 @@
     <link href="https://cyanky.github.io/posts/f5f5a5e6/"/>
     <id>https://cyanky.github.io/posts/f5f5a5e6/</id>
     <published>2022-05-29T10:20:47.000Z</published>
-    <updated>2022-05-29T10:29:31.747Z</updated>
+    <updated>2022-05-30T07:07:44.761Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Function"><a href="#Function" class="headerlink" title="Function:"></a><strong>Function</strong>:</h1><p>the smallest building block in java programs, to perform a task ( the button on the  remote control of TV )  </p><h1 id="the-parts-of-a-function"><a href="#the-parts-of-a-function" class="headerlink" title="the parts of a function"></a>the parts of a function</h1><ol><li><p><strong>Return Type</strong> : <strong>void</strong>&#x2F;value&#x2F;…  </p></li><li><p><strong>the name of the function</strong>: send email…( clearly identifies the purpose of the function)  </p></li><li><p><em>parenthese</em> <strong>(parameters)</strong>: who’s the receiver what is the subject&#x2F;content of the email   </p></li><li><p><em>a pair of curly braces</em> <strong>{</strong> <em>&#x2F;&#x2F;put the left brace on the same line where we define our function in Java</em><br>… the actual Java code <strong>method in Java</strong> (the function that is part of a class)<br><strong>}</strong>  </p></li><li><p><strong>main function</strong>: every Java program need at least one function called this, is the entry point to our programs whenever we execute a Java  program.  </p></li><li><p><strong>class</strong>: a <strong>container</strong> for one or more related functions. Used to organize our codes. Functions in Java don’t exixt on their own (but can exist in Python), they belong to a class.  </p></li><li><p><strong>main class</strong>: every Java program need at least one class called this that contain the main function<br><em><strong>class(key word) + proper descriptive name {</strong></em>  </p></li><li><p><strong>function</strong>: exists outside of a class<br><strong>method</strong>: when a function belongs to a class we refer to it as a method of that class  </p></li><li><p><strong>access modifier</strong>: <em>public&#x2F;private&#x2F;…</em> all the classes and functions should have this. A special keyword determine whether other classes and methods in this program can access to these classes and methods.  </p></li><li><p><strong>PascalNamingConvention</strong>–&gt; Classes<br><strong>camelNamingConvention</strong>–&gt; Methods</p></li></ol><pre><code>public class Main &#123;        public void main() &#123;        ...        &#125;    &#125;  </code></pre>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h1 id=&quot;Function&quot;&gt;&lt;a href=&quot;#Function&quot; class=&quot;headerlink&quot; title=&quot;Function:&quot;&gt;&lt;/a&gt;&lt;strong&gt;Function&lt;/strong&gt;:&lt;/h1&gt;&lt;p&gt;the smallest building block</summary>
-      
+    <summary type="html">The definition of &#39;Function&#39; in JAVA.</summary>
     
     
     
@@ -49,15 +46,12 @@
     <link href="https://cyanky.github.io/posts/4a17b156/"/>
     <id>https://cyanky.github.io/posts/4a17b156/</id>
     <published>2022-05-28T11:18:22.558Z</published>
-    <updated>2022-05-29T07:44:51.565Z</updated>
+    <updated>2022-05-30T07:08:52.136Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
+    <summary type="html">The guide of HEXO.</summary>
     
     
     
