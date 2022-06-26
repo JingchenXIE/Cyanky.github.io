@@ -6,7 +6,7 @@
   <link href="https://cyanky.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyanky.github.io/"/>
-  <updated>2022-05-30T07:07:44.761Z</updated>
+  <updated>2022-06-26T06:43:02.741Z</updated>
   <id>https://cyanky.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Containers</title>
+    <link href="https://cyanky.github.io/posts/def1a7db/"/>
+    <id>https://cyanky.github.io/posts/def1a7db/</id>
+    <published>2022-06-26T06:32:00.000Z</published>
+    <updated>2022-06-26T06:43:02.741Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="What-is-a-Container"><a href="#What-is-a-Container" class="headerlink" title="What is a Container?"></a>What is a Container?</h3><p><a href="https://en.wikipedia.org/wiki/OS-level_virtualization">OS level virtualization</a> allows us to run <em>multiple isolated processes</em> in parallel. A container is an isolated process that consists of the following items, all bundled into one package:</p><ul><li>the application code,</li><li>the required dependencies (e.g. libraries, utilities, configuration files), and</li><li>the necessary runtime environment to run the application.</li></ul><p>Each container is an independent component that can run on its own and be moved from environment to environment.</p><h4 id="Benefit-of-Containers"><a href="#Benefit-of-Containers" class="headerlink" title="Benefit of Containers"></a>Benefit of Containers</h4><ul><li>Containers make it easier for developers to create, deploy, and run applications on different hardware and platforms, quickly and easily.</li><li>Containers share a single kernel and share application libraries.</li><li>Containers cause a lower system overhead as compared to Virtual Machines.</li></ul><h3 id="How-to-create-containers"><a href="#How-to-create-containers" class="headerlink" title="How to create containers?"></a>How to create containers?</h3><p>Several platforms (called Container runtime&#x2F;engines) allow us to create containers. Some common Container runtime&#x2F;engines are:</p><ul><li><a href="https://www.docker.com/products/container-runtime">Docker</a> - A standardized packaging format for diverse applications</li><li><a href="https://cri-o.io/">CRI-O</a> - Lightweight container runtime for Kubernetes</li><li><a href="https://openvz.org/">OpenVZ</a> - Open source container-based virtualization for Linux</li><li><a href="https://containerd.io/">Containerd</a> - Container runtime with an emphasis on simplicity, robustness, and portability</li><li><a href="https://coreos.com/rkt/">Rkt</a> - An application container engine developed for modern production cloud-native environments</li><li><a href="https://linuxcontainers.org/">LXC and LXD</a> - A distro and vendor-neutral environment for the development of Linux container technologies</li></ul><p>Docker is the most popular one and hence, in this course, you will learn to create containers using the Docker engine.</p><h3 id="Containers-vs-VM"><a href="#Containers-vs-VM" class="headerlink" title="Containers vs VM"></a>Containers vs VM</h3><h4 id="What-is-a-VM"><a href="#What-is-a-VM" class="headerlink" title="What is a VM?"></a>What is a VM?</h4><p>A VM is like a complete computer, with its own copy of an operating system and <em>virtual</em> hardware. Just as with containers, a single physical machine (the host machine) can run many virtual machines to scale the number of isolated applications. While virtual machines work well for scaling applications, since they virtualize an entire machine, they can be resource-intensive. This is where containers can be an improvement.</p><ul><li><p><strong>How multiple VMs are managed on a host machine?</strong><br>Each VM has a complete OS, and multiple VMs can run on the same host. The host operating system runs the VMs using a <strong>hypervisor</strong>, which is special software that creates and manages the VMs. The hypervisor maintains the isolation of the VMs with each other.</p></li><li><p><strong>How multiple containers are managed on a host machine?</strong><br>Containers bundle together an application with its dependencies. Unlike VMs, containers do not have a separate OS or virtualized hardware. They share a single operating system kernel. In practice, the containers are managed by a <strong>container manager</strong>, which serves a role analogous to the hypervisor in a VM scenario.</p></li></ul><h4 id="How-to-create-VMs"><a href="#How-to-create-VMs" class="headerlink" title="How to create VMs?"></a>How to create VMs?</h4><p>If you want to create a VM (a complete computer) locally, you can use either of the following software (called Hypervisors):</p><ul><li><a href="https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine">Microsoft Hyper-V</a></li><li><a href="https://www.virtualbox.org/manual/ch01.html">Oracle VM VirtualBox</a></li><li><a href="https://www.vmware.com/">VMWare</a></li><li><a href="https://www.parallels.com/">Parallels Desktop</a></li></ul><p>We will not get into the details and types of hypervisors because it is beyond this course’s scope. Also, most of the cloud service providers offer you to create VM on their infrastructure, such as:</p><ul><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html">AWS EC2</a></li><li><a href="https://cloud.google.com/compute/docs/instances">GCP Compute Engines</a></li><li><a href="https://azure.microsoft.com/en-in/services/virtual-machines/">Azure Virtual Machines</a></li></ul><p>Creating VMs is also beyond the current course’s scope, but it is important to understand the relative difference between a container and a VM.</p><blockquote><p>Just as with containers, a single physical machine (the host machine) can run many virtual machines to scale the number of isolated applications.</p></blockquote><h4 id="Problem-with-VMs"><a href="#Problem-with-VMs" class="headerlink" title="Problem with VMs"></a>Problem with VMs</h4><p>Earlier, we learned that a VM is like a complete computer, with its own copy of an operating system and virtual hardware. While virtual machines work well for scaling applications, they can be resource-intensive since they virtualize an entire machine. This is where containers can be an improvement when you want to scale up your application.</p><h4 id="Why-containers-are-light-weight"><a href="#Why-containers-are-light-weight" class="headerlink" title="Why containers are light-weight?"></a>Why containers are light-weight?</h4><p>Containers run on the shared host OS instead of virtualizing an entire OS and hardware. Containers share the operating system kernel and partitioning the operating system’s resources. There are no virtual operating systems or virtual hardware in the container model, which reduces the total resources needed to run them.</p><h4 id="Summary-Benefits-of-using-Containers-versus-VMs"><a href="#Summary-Benefits-of-using-Containers-versus-VMs" class="headerlink" title="Summary: Benefits of using Containers versus VMs"></a>Summary: Benefits of using Containers versus VMs</h4><p>There are several benefits of using Containers over VMs:</p><ul><li><p><strong>Size:</strong> Containers are much smaller than Virtual Machines (VM) and run as isolated processes versus virtualized hardware. VMs can be in GBs while containers are in MBs.</p></li><li><p><strong>Speed:</strong> Virtual Machines can be slow to boot and take minutes to launch. A container can spawn much more quickly typically in seconds.</p></li><li><p><strong>Composability:</strong> Containers are designed to be programmatically built and are defined as source code. Virtual Machines are often replicas of a conventional computer system.</p></li></ul>]]></content>
+    
+    
+    <summary type="html">Containers are a light-weight option to bundle an application with its environment.</summary>
+    
+    
+    
+    <category term="Server Deployment" scheme="https://cyanky.github.io/categories/Server-Deployment/"/>
+    
+    <category term="Python" scheme="https://cyanky.github.io/categories/Server-Deployment/Python/"/>
+    
+    
+    <category term="Server Deployment" scheme="https://cyanky.github.io/tags/Server-Deployment/"/>
+    
+    <category term="Python" scheme="https://cyanky.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Test-Anatomy of Java</title>
@@ -38,23 +63,6 @@
     
     
     <category term="JAVA" scheme="https://cyanky.github.io/tags/JAVA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://cyanky.github.io/posts/4a17b156/"/>
-    <id>https://cyanky.github.io/posts/4a17b156/</id>
-    <published>2022-05-28T11:18:22.558Z</published>
-    <updated>2022-05-30T07:08:52.136Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-    <summary type="html">The guide of HEXO.</summary>
-    
-    
-    
     
   </entry>
   

@@ -19,28 +19,29 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"cyanky.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="The definition of &#39;Function&#39; in JAVA.">
+    <meta name="description" content="Containers are a light-weight option to bundle an application with its environment.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Test-Anatomy of Java">
-<meta property="og:url" content="https://cyanky.github.io/posts/f5f5a5e6/index.html">
+<meta property="og:title" content="Containers">
+<meta property="og:url" content="https://cyanky.github.io/posts/def1a7db/index.html">
 <meta property="og:site_name" content="XIE Jingchen">
-<meta property="og:description" content="The definition of &#39;Function&#39; in JAVA.">
+<meta property="og:description" content="Containers are a light-weight option to bundle an application with its environment.">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-05-29T10:20:47.000Z">
-<meta property="article:modified_time" content="2022-05-30T07:07:44.761Z">
+<meta property="article:published_time" content="2022-06-26T06:32:00.000Z">
+<meta property="article:modified_time" content="2022-06-26T06:43:02.741Z">
 <meta property="article:author" content="XIE Jingchen">
-<meta property="article:tag" content="JAVA">
+<meta property="article:tag" content="Server Deployment">
+<meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://cyanky.github.io/posts/f5f5a5e6/">
+<link rel="canonical" href="https://cyanky.github.io/posts/def1a7db/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://cyanky.github.io/posts/f5f5a5e6/","path":"posts/f5f5a5e6/","title":"Test-Anatomy of Java"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://cyanky.github.io/posts/def1a7db/","path":"posts/def1a7db/","title":"Containers"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Test-Anatomy of Java | XIE Jingchen</title>
+<title>Containers | XIE Jingchen</title>
   
 
 
@@ -144,7 +145,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Function"><span class="nav-number">1.</span> <span class="nav-text">Function:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#the-parts-of-a-function"><span class="nav-number">2.</span> <span class="nav-text">the parts of a function</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-a-Container"><span class="nav-number">1.</span> <span class="nav-text">What is a Container?</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Benefit-of-Containers"><span class="nav-number">1.1.</span> <span class="nav-text">Benefit of Containers</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-to-create-containers"><span class="nav-number">2.</span> <span class="nav-text">How to create containers?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Containers-vs-VM"><span class="nav-number">3.</span> <span class="nav-text">Containers vs VM</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#What-is-a-VM"><span class="nav-number">3.1.</span> <span class="nav-text">What is a VM?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#How-to-create-VMs"><span class="nav-number">3.2.</span> <span class="nav-text">How to create VMs?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Problem-with-VMs"><span class="nav-number">3.3.</span> <span class="nav-text">Problem with VMs</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Why-containers-are-light-weight"><span class="nav-number">3.4.</span> <span class="nav-text">Why containers are light-weight?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Summary-Benefits-of-using-Containers-versus-VMs"><span class="nav-number">3.5.</span> <span class="nav-text">Summary: Benefits of using Containers versus VMs</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -220,7 +221,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://cyanky.github.io/posts/f5f5a5e6/">
+    <link itemprop="mainEntityOfPage" href="https://cyanky.github.io/posts/def1a7db/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -233,12 +234,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Test-Anatomy of Java | XIE Jingchen">
-      <meta itemprop="description" content="The definition of 'Function' in JAVA.">
+      <meta itemprop="name" content="Containers | XIE Jingchen">
+      <meta itemprop="description" content="Containers are a light-weight option to bundle an application with its environment.">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Test-Anatomy of Java
+          Containers
         </h1>
 
         <div class="post-meta-container">
@@ -248,15 +249,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2022-05-29 19:20:47" itemprop="dateCreated datePublished" datetime="2022-05-29T19:20:47+09:00">2022-05-29</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-05-30 16:07:44" itemprop="dateModified" datetime="2022-05-30T16:07:44+09:00">2022-05-30</time>
+      <time title="Created: 2022-06-26 15:32:00 / Modified: 15:43:02" itemprop="dateCreated datePublished" datetime="2022-06-26T15:32:00+09:00">2022-06-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -264,15 +259,11 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Web-Develope/" itemprop="url" rel="index"><span itemprop="name">Web Develope</span></a>
+          <a href="/categories/Server-Deployment/" itemprop="url" rel="index"><span itemprop="name">Server Deployment</span></a>
         </span>
           , 
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Web-Develope/Backend/" itemprop="url" rel="index"><span itemprop="name">Backend</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Web-Develope/Backend/JAVA/" itemprop="url" rel="index"><span itemprop="name">JAVA</span></a>
+          <a href="/categories/Server-Deployment/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
         </span>
     </span>
 
@@ -283,18 +274,18 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Symbols count in article: </span>
-      <span>1.2k</span>
+      <span>4k</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>1 mins.</span>
+      <span>4 mins.</span>
     </span>
 </div>
 
-            <div class="post-description">The definition of 'Function' in JAVA.</div>
+            <div class="post-description">Containers are a light-weight option to bundle an application with its environment.</div>
         </div>
       </header>
 
@@ -302,35 +293,63 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="Function"><a href="#Function" class="headerlink" title="Function:"></a><strong>Function</strong>:</h1><p>the smallest building block in java programs, to perform a task ( the button on the  remote control of TV )  </p>
-<h1 id="the-parts-of-a-function"><a href="#the-parts-of-a-function" class="headerlink" title="the parts of a function"></a>the parts of a function</h1><ol>
-<li><p><strong>Return Type</strong> : <strong>void</strong>&#x2F;value&#x2F;…  </p>
+        <h3 id="What-is-a-Container"><a href="#What-is-a-Container" class="headerlink" title="What is a Container?"></a>What is a Container?</h3><p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/OS-level_virtualization">OS level virtualization</a> allows us to run <em>multiple isolated processes</em> in parallel. A container is an isolated process that consists of the following items, all bundled into one package:</p>
+<ul>
+<li>the application code,</li>
+<li>the required dependencies (e.g. libraries, utilities, configuration files), and</li>
+<li>the necessary runtime environment to run the application.</li>
+</ul>
+<p>Each container is an independent component that can run on its own and be moved from environment to environment.</p>
+<h4 id="Benefit-of-Containers"><a href="#Benefit-of-Containers" class="headerlink" title="Benefit of Containers"></a>Benefit of Containers</h4><ul>
+<li>Containers make it easier for developers to create, deploy, and run applications on different hardware and platforms, quickly and easily.</li>
+<li>Containers share a single kernel and share application libraries.</li>
+<li>Containers cause a lower system overhead as compared to Virtual Machines.</li>
+</ul>
+<h3 id="How-to-create-containers"><a href="#How-to-create-containers" class="headerlink" title="How to create containers?"></a>How to create containers?</h3><p>Several platforms (called Container runtime&#x2F;engines) allow us to create containers. Some common Container runtime&#x2F;engines are:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.docker.com/products/container-runtime">Docker</a> - A standardized packaging format for diverse applications</li>
+<li><a target="_blank" rel="noopener" href="https://cri-o.io/">CRI-O</a> - Lightweight container runtime for Kubernetes</li>
+<li><a target="_blank" rel="noopener" href="https://openvz.org/">OpenVZ</a> - Open source container-based virtualization for Linux</li>
+<li><a target="_blank" rel="noopener" href="https://containerd.io/">Containerd</a> - Container runtime with an emphasis on simplicity, robustness, and portability</li>
+<li><a target="_blank" rel="noopener" href="https://coreos.com/rkt/">Rkt</a> - An application container engine developed for modern production cloud-native environments</li>
+<li><a target="_blank" rel="noopener" href="https://linuxcontainers.org/">LXC and LXD</a> - A distro and vendor-neutral environment for the development of Linux container technologies</li>
+</ul>
+<p>Docker is the most popular one and hence, in this course, you will learn to create containers using the Docker engine.</p>
+<h3 id="Containers-vs-VM"><a href="#Containers-vs-VM" class="headerlink" title="Containers vs VM"></a>Containers vs VM</h3><h4 id="What-is-a-VM"><a href="#What-is-a-VM" class="headerlink" title="What is a VM?"></a>What is a VM?</h4><p>A VM is like a complete computer, with its own copy of an operating system and <em>virtual</em> hardware. Just as with containers, a single physical machine (the host machine) can run many virtual machines to scale the number of isolated applications. While virtual machines work well for scaling applications, since they virtualize an entire machine, they can be resource-intensive. This is where containers can be an improvement.</p>
+<ul>
+<li><p><strong>How multiple VMs are managed on a host machine?</strong><br>Each VM has a complete OS, and multiple VMs can run on the same host. The host operating system runs the VMs using a <strong>hypervisor</strong>, which is special software that creates and manages the VMs. The hypervisor maintains the isolation of the VMs with each other.</p>
 </li>
-<li><p><strong>the name of the function</strong>: send email…( clearly identifies the purpose of the function)  </p>
+<li><p><strong>How multiple containers are managed on a host machine?</strong><br>Containers bundle together an application with its dependencies. Unlike VMs, containers do not have a separate OS or virtualized hardware. They share a single operating system kernel. In practice, the containers are managed by a <strong>container manager</strong>, which serves a role analogous to the hypervisor in a VM scenario.</p>
 </li>
-<li><p><em>parenthese</em> <strong>(parameters)</strong>: who’s the receiver what is the subject&#x2F;content of the email   </p>
+</ul>
+<h4 id="How-to-create-VMs"><a href="#How-to-create-VMs" class="headerlink" title="How to create VMs?"></a>How to create VMs?</h4><p>If you want to create a VM (a complete computer) locally, you can use either of the following software (called Hypervisors):</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine">Microsoft Hyper-V</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.virtualbox.org/manual/ch01.html">Oracle VM VirtualBox</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.vmware.com/">VMWare</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.parallels.com/">Parallels Desktop</a></li>
+</ul>
+<p>We will not get into the details and types of hypervisors because it is beyond this course’s scope. Also, most of the cloud service providers offer you to create VM on their infrastructure, such as:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html">AWS EC2</a></li>
+<li><a target="_blank" rel="noopener" href="https://cloud.google.com/compute/docs/instances">GCP Compute Engines</a></li>
+<li><a target="_blank" rel="noopener" href="https://azure.microsoft.com/en-in/services/virtual-machines/">Azure Virtual Machines</a></li>
+</ul>
+<p>Creating VMs is also beyond the current course’s scope, but it is important to understand the relative difference between a container and a VM.</p>
+<blockquote>
+<p>Just as with containers, a single physical machine (the host machine) can run many virtual machines to scale the number of isolated applications.</p>
+</blockquote>
+<h4 id="Problem-with-VMs"><a href="#Problem-with-VMs" class="headerlink" title="Problem with VMs"></a>Problem with VMs</h4><p>Earlier, we learned that a VM is like a complete computer, with its own copy of an operating system and virtual hardware. While virtual machines work well for scaling applications, they can be resource-intensive since they virtualize an entire machine. This is where containers can be an improvement when you want to scale up your application.</p>
+<h4 id="Why-containers-are-light-weight"><a href="#Why-containers-are-light-weight" class="headerlink" title="Why containers are light-weight?"></a>Why containers are light-weight?</h4><p>Containers run on the shared host OS instead of virtualizing an entire OS and hardware. Containers share the operating system kernel and partitioning the operating system’s resources. There are no virtual operating systems or virtual hardware in the container model, which reduces the total resources needed to run them.</p>
+<h4 id="Summary-Benefits-of-using-Containers-versus-VMs"><a href="#Summary-Benefits-of-using-Containers-versus-VMs" class="headerlink" title="Summary: Benefits of using Containers versus VMs"></a>Summary: Benefits of using Containers versus VMs</h4><p>There are several benefits of using Containers over VMs:</p>
+<ul>
+<li><p><strong>Size:</strong> Containers are much smaller than Virtual Machines (VM) and run as isolated processes versus virtualized hardware. VMs can be in GBs while containers are in MBs.</p>
 </li>
-<li><p><em>a pair of curly braces</em> <strong>{</strong> <em>&#x2F;&#x2F;put the left brace on the same line where we define our function in Java</em><br>… the actual Java code <strong>method in Java</strong> (the function that is part of a class)<br><strong>}</strong>  </p>
+<li><p><strong>Speed:</strong> Virtual Machines can be slow to boot and take minutes to launch. A container can spawn much more quickly typically in seconds.</p>
 </li>
-<li><p><strong>main function</strong>: every Java program need at least one function called this, is the entry point to our programs whenever we execute a Java  program.  </p>
+<li><p><strong>Composability:</strong> Containers are designed to be programmatically built and are defined as source code. Virtual Machines are often replicas of a conventional computer system.</p>
 </li>
-<li><p><strong>class</strong>: a <strong>container</strong> for one or more related functions. Used to organize our codes. Functions in Java don’t exixt on their own (but can exist in Python), they belong to a class.  </p>
-</li>
-<li><p><strong>main class</strong>: every Java program need at least one class called this that contain the main function<br><em><strong>class(key word) + proper descriptive name {</strong></em>  </p>
-</li>
-<li><p><strong>function</strong>: exists outside of a class<br><strong>method</strong>: when a function belongs to a class we refer to it as a method of that class  </p>
-</li>
-<li><p><strong>access modifier</strong>: <em>public&#x2F;private&#x2F;…</em> all the classes and functions should have this. A special keyword determine whether other classes and methods in this program can access to these classes and methods.  </p>
-</li>
-<li><p><strong>PascalNamingConvention</strong>–&gt; Classes<br><strong>camelNamingConvention</strong>–&gt; Methods</p>
-</li>
-</ol>
-<pre><code>public class Main &#123;  
-      public void main() &#123;  
-      ...  
-      &#125;  
-  &#125;  
-</code></pre>
+</ul>
 
     </div>
 
@@ -348,7 +367,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="https://cyanky.github.io/posts/f5f5a5e6/" title="Test-Anatomy of Java">https://cyanky.github.io/posts/f5f5a5e6/</a>
+      <a href="https://cyanky.github.io/posts/def1a7db/" title="Containers">https://cyanky.github.io/posts/def1a7db/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC</a> unless stating additionally.
@@ -357,18 +376,19 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/JAVA/" rel="tag"># JAVA</a>
+              <a href="/tags/Server-Deployment/" rel="tag"># Server Deployment</a>
+              <a href="/tags/Python/" rel="tag"># Python</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/posts/f5f5a5e6/" rel="prev" title="Test-Anatomy of Java">
+                  <i class="fa fa-chevron-left"></i> Test-Anatomy of Java
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/posts/def1a7db/" rel="next" title="Containers">
-                  Containers <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
