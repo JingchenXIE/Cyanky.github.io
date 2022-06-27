@@ -6,7 +6,7 @@
   <link href="https://cyanky.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyanky.github.io/"/>
-  <updated>2022-06-26T06:43:02.741Z</updated>
+  <updated>2022-06-27T13:36:49.959Z</updated>
   <id>https://cyanky.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Docker</title>
+    <link href="https://cyanky.github.io/posts/f5f9fa9b/"/>
+    <id>https://cyanky.github.io/posts/f5f9fa9b/</id>
+    <published>2022-06-27T13:33:23.000Z</published>
+    <updated>2022-06-27T13:36:49.959Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Glossary"><a href="#Glossary" class="headerlink" title="Glossary"></a>Glossary</h2><ol><li><p><strong>Docker Engine</strong><br><em>Docker Engine</em> is an application that consists of a <em>daemon</em>, an <em>API</em>, and a <em>client</em>:</p><ul><li><p>The Docker <em>daemon</em> is a server that manages the images, containers, networks, and volumes.</p></li><li><p>The Docker <em>client</em> is the user interface for Docker. The client is a CLI, so most of the work you do with Docker will take place at the command line.</p></li></ul><p>The client communicates with the daemon through the command line API as shown in the image below. You will be using the Docker Engine to create and run containers, so if you have not installed Docker using the links above, please be sure to do so.</p></li></ol><p><img src="https://video.udacity-data.com/topher/2019/July/5d407c96_image1/image1.png" alt="Docker engine consists of the Docker Daemon, Docker API, and Docker Client"></p><p>Docker engine consists of the Docker Daemon, Docker API, and Docker Client</p><ol start="2"><li><strong>Docker Image</strong><br>A Docker <em>image</em> is the set of instructions for creating a container. The image typically includes a file system and the parameters that will be used for the container.</li></ol><blockquote><p>Images are comprised of multiple layers. Each layer contains specific software.</p></blockquote><p>You can create a custom Docker image for a specific application. Start with a standardized [*parent image*](<a href="https://docs.docker.com/glossary/?term=parent">https://docs.docker.com/glossary/?term=parent</a> image) as the base layer. The parent image often contains the file system of a particular operating system, such as Ubuntu 18.04. Then add an additional layer to the image, on top of the base layer. You can add your application files to this additional layer. You can even add multiple additional layers, and distribute your application files across different layers, as appropriate for your needs.</p><p>You will be able to see this structure more clearly when you create Dockerfiles in the coming classroom concept.</p><ol start="3"><li><p><strong>Docker Container</strong><br>You have already been introduced to containers, and a Docker container is just the Docker-specific implementation of the concept. In practice, Docker containers are created from Docker images - a container is a runnable instance of an image. Note that since the image is a set of instructions for creating a container, multiple containers can be created from the same image.</p></li><li><p><strong>Docker Registry</strong><br>Docker images can be stored and distributed using a <a href="https://docs.docker.com/registry/">Docker registry</a>. In the next classroom concept, you will download and run an image from <a href="https://hub.docker.com/">DockerHub</a>, which is a free registry with many images you can use.</p></li></ol>]]></content>
+    
+    
+    <summary type="html">Docker is the most popular open-sourced container runtime tool that helps to build, test, and run containers. It is both a container system and a company.</summary>
+    
+    
+    
+    <category term="Server Deployment" scheme="https://cyanky.github.io/categories/Server-Deployment/"/>
+    
+    
+    <category term="Server Deployment" scheme="https://cyanky.github.io/tags/Server-Deployment/"/>
+    
+  </entry>
   
   <entry>
     <title>Containers</title>
