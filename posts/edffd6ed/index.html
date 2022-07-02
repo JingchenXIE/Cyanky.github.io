@@ -19,28 +19,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"cyanky.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Cloud Computing is the delivery of IT resources over the Internet.">
+    <meta name="description" content="S3, EC3, IAM">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Cloud Computing">
-<meta property="og:url" content="https://cyanky.github.io/posts/2511a43a/index.html">
+<meta property="og:title" content="AWS_Service_Part1">
+<meta property="og:url" content="https://cyanky.github.io/posts/edffd6ed/index.html">
 <meta property="og:site_name" content="Jingchen XIE">
-<meta property="og:description" content="Cloud Computing is the delivery of IT resources over the Internet.">
+<meta property="og:description" content="S3, EC3, IAM">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-06-29T13:04:49.000Z">
-<meta property="article:modified_time" content="2022-06-29T13:06:53.717Z">
+<meta property="og:image" content="https://video.udacity-data.com/topher/2021/January/5ff5b2d0_screenshot-2021-01-06-at-6.08.07-pm/screenshot-2021-01-06-at-6.08.07-pm.png">
+<meta property="article:published_time" content="2022-07-01T13:30:16.000Z">
+<meta property="article:modified_time" content="2022-07-02T14:49:39.004Z">
 <meta property="article:author" content="Jingchen XIE">
-<meta property="article:tag" content="Server Deplovment">
+<meta property="article:tag" content="Server Deployment">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://video.udacity-data.com/topher/2021/January/5ff5b2d0_screenshot-2021-01-06-at-6.08.07-pm/screenshot-2021-01-06-at-6.08.07-pm.png">
 
 
-<link rel="canonical" href="https://cyanky.github.io/posts/2511a43a/">
+<link rel="canonical" href="https://cyanky.github.io/posts/edffd6ed/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://cyanky.github.io/posts/2511a43a/","path":"posts/2511a43a/","title":"Cloud Computing"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://cyanky.github.io/posts/edffd6ed/","path":"posts/edffd6ed/","title":"AWS_Service_Part1"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Cloud Computing | Jingchen XIE</title>
+<title>AWS_Service_Part1 | Jingchen XIE</title>
   
 
 
@@ -144,7 +146,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Cloud-Computing"><span class="nav-number">1.</span> <span class="nav-text">Cloud Computing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Characteristics-of-Cloud-Computing"><span class="nav-number">2.</span> <span class="nav-text">Characteristics of Cloud Computing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Benefits-of-using-Cloud-Computing"><span class="nav-number">3.</span> <span class="nav-text">Benefits of using Cloud Computing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cloud-Deployment-Models"><span class="nav-number">4.</span> <span class="nav-text">Cloud Deployment Models</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Types-of-Cloud-Computing"><span class="nav-number">5.</span> <span class="nav-text">Types of Cloud Computing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Amazon-Web-Services-AWS-is-a-Market-Leader"><span class="nav-number">6.</span> <span class="nav-text">Amazon Web Services (AWS) is a Market Leader</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cloud-Based-Products"><span class="nav-number">7.</span> <span class="nav-text">Cloud-Based Products</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#S3"><span class="nav-number">1.</span> <span class="nav-text">S3</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Properties"><span class="nav-number">1.1.</span> <span class="nav-text">1. Properties</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Metrics"><span class="nav-number">1.2.</span> <span class="nav-text">2. Metrics</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Management"><span class="nav-number">1.3.</span> <span class="nav-text">3. Management</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Access-points"><span class="nav-number">1.4.</span> <span class="nav-text">4. Access points</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#EC2-Elastic-Cloud-Compute"><span class="nav-number">2.</span> <span class="nav-text">EC2: Elastic Cloud Compute</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IAM"><span class="nav-number">3.</span> <span class="nav-text">IAM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Identity-amp-Access-Management"><span class="nav-number">3.1.</span> <span class="nav-text">Identity &amp; Access Management</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-IAM-User"><span class="nav-number">3.1.1.</span> <span class="nav-text">1. IAM User</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-IAM-Group"><span class="nav-number">3.1.2.</span> <span class="nav-text">2. IAM Group</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-IAM-Role"><span class="nav-number">3.1.3.</span> <span class="nav-text">3. IAM Role</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Difference-between-an-IAM-role-and-an-IAM-user"><span class="nav-number">3.1.4.</span> <span class="nav-text">Difference between an IAM role and an IAM user</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-IAM-Policy"><span class="nav-number">3.1.5.</span> <span class="nav-text">4. IAM Policy</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -220,7 +222,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://cyanky.github.io/posts/2511a43a/">
+    <link itemprop="mainEntityOfPage" href="https://cyanky.github.io/posts/edffd6ed/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -233,12 +235,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Cloud Computing | Jingchen XIE">
-      <meta itemprop="description" content="Cloud Computing is the delivery of IT resources over the Internet.">
+      <meta itemprop="name" content="AWS_Service_Part1 | Jingchen XIE">
+      <meta itemprop="description" content="S3, EC3, IAM">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Cloud Computing
+          AWS_Service_Part1
         </h1>
 
         <div class="post-meta-container">
@@ -248,9 +250,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2022-06-29 22:04:49 / Modified: 22:06:53" itemprop="dateCreated datePublished" datetime="2022-06-29T22:04:49+09:00">2022-06-29</time>
+      <time title="Created: 2022-07-01 22:30:16" itemprop="dateCreated datePublished" datetime="2022-07-01T22:30:16+09:00">2022-07-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-07-02 23:49:39" itemprop="dateModified" datetime="2022-07-02T23:49:39+09:00">2022-07-02</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -258,7 +266,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Server-Deplovment/" itemprop="url" rel="index"><span itemprop="name">Server Deplovment</span></a>
+          <a href="/categories/Server-Deployment/" itemprop="url" rel="index"><span itemprop="name">Server Deployment</span></a>
         </span>
     </span>
 
@@ -269,18 +277,18 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Symbols count in article: </span>
-      <span>2.3k</span>
+      <span>3.4k</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>2 mins.</span>
+      <span>3 mins.</span>
     </span>
 </div>
 
-            <div class="post-description">Cloud Computing is the delivery of IT resources over the Internet.</div>
+            <div class="post-description">S3, EC3, IAM</div>
         </div>
       </header>
 
@@ -288,88 +296,39 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="Cloud-Computing"><a href="#Cloud-Computing" class="headerlink" title="Cloud Computing"></a>Cloud Computing</h2><p>Cloud Computing is the delivery of IT resources over the Internet. The cloud is like a virtual data center accessible via the Internet that allows you to manage:</p>
+        <h2 id="S3"><a href="#S3" class="headerlink" title="S3"></a>S3</h2><p>Amazon S3: Object Storage built to store and retrieve any amout of data from anywhere.</p>
+<h3 id="1-Properties"><a href="#1-Properties" class="headerlink" title="1. Properties"></a>1. Properties</h3><p>There are several properties that you can set for S3 buckets, such as:</p>
 <ul>
-<li>Storage services like databases</li>
-<li>Servers, compute power, networking</li>
-<li>Analytics, artificial intelligence, augmented reality</li>
-<li>Security services for data and applications</li>
+<li>Bucket Versioning - Allows you to keep multiple versions of an object in the same bucket.</li>
+<li>Static website hosting - Mark if the bucket is used to host a website. S3 is a very cost-effective and cheap solution for serving up static web content.</li>
+<li>Requester pays - Make the requester pays for requests and data transfer costs.</li>
+<li>Server access logging - Log requests for access to your bucket.</li>
+<li><strong>Permissions</strong></li>
 </ul>
-<h2 id="Characteristics-of-Cloud-Computing"><a href="#Characteristics-of-Cloud-Computing" class="headerlink" title="Characteristics of Cloud Computing"></a>Characteristics of Cloud Computing</h2><ul>
-<li>Pay as you go - You pay only for what you use and only when your code runs.</li>
-<li>Autoscaling - The number of active servers can grow or shrink based on demand.</li>
-<li>Serverless - Allows you to write and deploy code without having to worry about the underlying infrastructure.</li>
-</ul>
-<h2 id="Benefits-of-using-Cloud-Computing"><a href="#Benefits-of-using-Cloud-Computing" class="headerlink" title="Benefits of using Cloud Computing"></a>Benefits of using Cloud Computing</h2><p>There are several benefits to the cloud.</p>
-<ul>
-<li>Stop guessing about capacity.</li>
-<li>Avoid huge capital investments up front.</li>
-<li>Pay for only what you use.</li>
-<li>Scale globally in minutes.</li>
-<li>Deliver faster.</li>
-</ul>
-<h2 id="Cloud-Deployment-Models"><a href="#Cloud-Deployment-Models" class="headerlink" title="Cloud Deployment Models"></a>Cloud Deployment Models</h2><ol>
-<li><strong>Public Cloud:</strong> A public cloud makes resources available over the Internet to the general public.</li>
-<li><strong>Private Cloud:</strong> A private cloud is a proprietary network that supplies services to a limited number of people.</li>
-<li><strong>Hybrid Cloud:</strong> A hybrid model contains a combination of both a public and a private cloud. The hybrid model is a growing trend in the industry for those organizations that have been slow to adopt the cloud due to being in a heavily regulated industry. The hybrid model gives organizations the flexibility to slowly migrate to the cloud.</li>
-</ol>
-<h2 id="Types-of-Cloud-Computing"><a href="#Types-of-Cloud-Computing" class="headerlink" title="Types of Cloud Computing"></a>Types of Cloud Computing</h2><ol>
-<li><strong>Infrastructure-as-a-Service (IaaS):</strong> The provider supplies virtual server instances, storage, and mechanisms for you to manage servers.</li>
-<li><strong>Platform-as-a-Service (PaaS):</strong> A platform of development tools hosted on a provider’s infrastructure.</li>
-<li><strong>Software-as-a-Service (SaaS):</strong> A software application that runs over the Internet and is managed by the service provider.</li>
-</ol>
-<h2 id="Amazon-Web-Services-AWS-is-a-Market-Leader"><a href="#Amazon-Web-Services-AWS-is-a-Market-Leader" class="headerlink" title="Amazon Web Services (AWS) is a Market Leader"></a>Amazon Web Services (AWS) is a Market Leader</h2><p>There are several popular cloud platforms like AWS, Azure, and GCP; however, Amazon Web Services (AWS) is one of the popular public cloud infrastructures. AWS routinely adds new services and invests billions of dollars in the overall platform and infrastructure.</p>
-<h2 id="Cloud-Based-Products"><a href="#Cloud-Based-Products" class="headerlink" title="Cloud-Based Products"></a>Cloud-Based Products</h2><p>Amazon Web Services offers a broad set of global cloud-based products.</p>
-<ul>
-<li>Analytics<ul>
-<li>Quick Sight</li>
-<li>Athena</li>
-<li>Redshift</li>
-</ul>
-</li>
-<li>Application integration<ul>
-<li>Simple Queue Service (SQS)</li>
-<li>Simple Notification Service (SNS)</li>
-</ul>
-</li>
-<li>Cost management<ul>
-<li>AWS Budgets</li>
-</ul>
-</li>
-<li>Compute services<ul>
-<li>Elastic Cloud Compute (EC2)</li>
-<li>Lambda</li>
-<li>Elastic Beanstalk</li>
-</ul>
-</li>
-<li>Database management services<ul>
-<li>MySQL</li>
-<li>Oracle</li>
-<li>SQLServer</li>
-<li>DynamoDB</li>
-<li>MongoDB</li>
-</ul>
-</li>
-<li>Developer tools<ul>
-<li>Cloud 9</li>
-<li>Code Pipeline</li>
-</ul>
-</li>
-<li>Security services<ul>
-<li>Key Management Service (KMS)</li>
-<li>Shield</li>
-<li>Identity and Access Management (IAM)</li>
-</ul>
-</li>
-<li>Additional Services<ul>
-<li>Blockchain</li>
-<li>Machine Learning</li>
-<li>Computer Vision</li>
-<li>Internet of Things (IoT)</li>
-<li>AR&#x2F;VR</li>
-</ul>
-</li>
-</ul>
+<p>It shows who has access to the S3 bucket, and who has access to the data within the bucket. In the example snapshots above, the bucket is public, meaning anyone can access it. Here, we can write an access policy (in JSON format) to provides access to the objects stored in the bucket.</p>
+<h3 id="2-Metrics"><a href="#2-Metrics" class="headerlink" title="2. Metrics"></a>2. Metrics</h3><p>View the metrics for usage, request, and data transfer activity within your bucket, such as, total bucket size, total number of objects, and storage class analysis.</p>
+<h3 id="3-Management"><a href="#3-Management" class="headerlink" title="3. Management"></a>3. Management</h3><p>It allows you to create life cycle rules to help manage your objects. It includes rules such as transitioning objects to another storage class, archiving them, or deleting them after a specified period of time.</p>
+<h3 id="4-Access-points"><a href="#4-Access-points" class="headerlink" title="4. Access points"></a>4. Access points</h3><p>Here, you can create access endpoints for sharing the bucket at scale. Using an endpoint, you can perform all regular operations on the bucket.</p>
+<h2 id="EC2-Elastic-Cloud-Compute"><a href="#EC2-Elastic-Cloud-Compute" class="headerlink" title="EC2: Elastic Cloud Compute"></a>EC2: Elastic Cloud Compute</h2><p>Elastic Cloud Compute or EC2 is a foundational piece of AWS’ cloud computing platform and is a service that provides servers for rent in the cloud.</p>
+<h2 id="IAM"><a href="#IAM" class="headerlink" title="IAM"></a>IAM</h2><h3 id="Identity-amp-Access-Management"><a href="#Identity-amp-Access-Management" class="headerlink" title="Identity &amp; Access Management"></a>Identity &amp; Access Management</h3><p>IAM is an AWS service that allows us to configure who can access our AWS account, AWS services, or even applications running in our account. IAM is a global service and is automatically available across <strong>all AWS regions</strong>.</p>
+<blockquote>
+<p>AWS IAM service securely controls access to AWS resources by authenticating and authorizing (giving granular permissions) the individual users, applications, or services.</p>
+</blockquote>
+<p>Let’s learn about key IAM terms.</p>
+<h4 id="1-IAM-User"><a href="#1-IAM-User" class="headerlink" title="1. IAM User"></a>1. IAM User</h4><p>A user is a unique identifier generated by the IAM service and recognized by all AWS services to grant access to AWS resources. A user can be a person, system, or application that requires access to AWS services. You can generate login credentials and access keys for any user in your account. Roles and policies control the scope (permissions) of a user’s access to AWS resources in your account.</p>
+<h4 id="2-IAM-Group"><a href="#2-IAM-Group" class="headerlink" title="2. IAM Group"></a>2. IAM Group</h4><p>A group collects IAM users with the same level of permissions to access AWS resources. You can attach or detach permissions to a group using access control policies. A group makes it easier to manage IAM users with the same level of permissions.</p>
+<h4 id="3-IAM-Role"><a href="#3-IAM-Role" class="headerlink" title="3. IAM Role"></a>3. IAM Role</h4><p>A role is simply a set of policies (permissions) to access AWS services. You can assign a role either to an IAM user or an AWS service such as EC2. Creating and storing roles helps to delegate access with defined permissions without sharing long-term access keys.</p>
+<blockquote>
+<h4 id="Difference-between-an-IAM-role-and-an-IAM-user"><a href="#Difference-between-an-IAM-role-and-an-IAM-user" class="headerlink" title="Difference between an IAM role and an IAM user"></a>Difference between an IAM role and an IAM user</h4><p>An IAM user has permanent credentials that can be used to interact with AWS services directly. In contrast, an IAM role does not have any credentials; hence it cannot make direct requests to AWS services. IAM roles are assumed by authorized entities, such as IAM users, applications, or other AWS services.</p>
+</blockquote>
+<h4 id="4-IAM-Policy"><a href="#4-IAM-Policy" class="headerlink" title="4. IAM Policy"></a>4. IAM Policy</h4><p>An access control policy is a JSON file that defines the resource to grant access, level of access, and allowed actions. In simple words, a policy defines the permissions to access a resource. You can attach a policy to multiple users, groups, or roles to assign permissions to AWS resources.</p>
+<p>AWS offers predefined policies that are managed by AWS. You can even create, save, and attach custom policies, as shown below</p>
+<p><img src="https://video.udacity-data.com/topher/2021/January/5ff5b2d0_screenshot-2021-01-06-at-6.08.07-pm/screenshot-2021-01-06-at-6.08.07-pm.png" alt="Screenshot showing creating a custom policy in the AWS web console"></p>
+<p>Create a custom policy using either a visual or a JSON editor</p>
+<p>See a sample IAM policy that allows full EC2 access within a specific AWS region. Notice the fields that are used to define the policy: <code>Action</code>, <code>Resource</code>, <code>Effect</code>, and <code>Condition</code>.</p>
+<blockquote>
+<p>EC2 is one the AWS serv</p>
+</blockquote>
 
     </div>
 
@@ -387,7 +346,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="https://cyanky.github.io/posts/2511a43a/" title="Cloud Computing">https://cyanky.github.io/posts/2511a43a/</a>
+      <a href="https://cyanky.github.io/posts/edffd6ed/" title="AWS_Service_Part1">https://cyanky.github.io/posts/edffd6ed/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC</a> unless stating additionally.
@@ -396,20 +355,20 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/Server-Deplovment/" rel="tag"># Server Deplovment</a>
+              <a href="/tags/Server-Deployment/" rel="tag"># Server Deployment</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/posts/f5f9fa9b/" rel="prev" title="Docker">
-                  <i class="fa fa-chevron-left"></i> Docker
+                <a href="/posts/2511a43a/" rel="prev" title="Cloud Computing">
+                  <i class="fa fa-chevron-left"></i> Cloud Computing
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/posts/edffd6ed/" rel="next" title="AWS_Service_Part1">
-                  AWS_Service_Part1 <i class="fa fa-chevron-right"></i>
+                <a href="/posts/9acacb00/" rel="next" title="Kubernetes">
+                  Kubernetes <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>

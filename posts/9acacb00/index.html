@@ -19,28 +19,31 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"cyanky.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Cloud Computing is the delivery of IT resources over the Internet.">
+    <meta name="description" content="Kubernetes is one of the most popular orchestration system for containers developed by Google and open sourced in 2014. It can automate many of the manual operations of deployment and scaling of a con">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Cloud Computing">
-<meta property="og:url" content="https://cyanky.github.io/posts/2511a43a/index.html">
+<meta property="og:title" content="Kubernetes">
+<meta property="og:url" content="https://cyanky.github.io/posts/9acacb00/index.html">
 <meta property="og:site_name" content="Jingchen XIE">
-<meta property="og:description" content="Cloud Computing is the delivery of IT resources over the Internet.">
+<meta property="og:description" content="Kubernetes is one of the most popular orchestration system for containers developed by Google and open sourced in 2014. It can automate many of the manual operations of deployment and scaling of a con">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-06-29T13:04:49.000Z">
-<meta property="article:modified_time" content="2022-06-29T13:06:53.717Z">
+<meta property="og:image" content="https://video.udacity-data.com/topher/2019/September/5d71adc3_image2/image2.png">
+<meta property="og:image" content="https://video.udacity-data.com/topher/2019/September/5d71ad55_l2-deployment-2/l2-deployment-2.png">
+<meta property="article:published_time" content="2022-07-02T14:36:32.000Z">
+<meta property="article:modified_time" content="2022-07-02T14:49:31.276Z">
 <meta property="article:author" content="Jingchen XIE">
-<meta property="article:tag" content="Server Deplovment">
+<meta property="article:tag" content="Server Deployment">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://video.udacity-data.com/topher/2019/September/5d71adc3_image2/image2.png">
 
 
-<link rel="canonical" href="https://cyanky.github.io/posts/2511a43a/">
+<link rel="canonical" href="https://cyanky.github.io/posts/9acacb00/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://cyanky.github.io/posts/2511a43a/","path":"posts/2511a43a/","title":"Cloud Computing"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://cyanky.github.io/posts/9acacb00/","path":"posts/9acacb00/","title":"Kubernetes"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Cloud Computing | Jingchen XIE</title>
+<title>Kubernetes | Jingchen XIE</title>
   
 
 
@@ -144,7 +147,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Cloud-Computing"><span class="nav-number">1.</span> <span class="nav-text">Cloud Computing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Characteristics-of-Cloud-Computing"><span class="nav-number">2.</span> <span class="nav-text">Characteristics of Cloud Computing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Benefits-of-using-Cloud-Computing"><span class="nav-number">3.</span> <span class="nav-text">Benefits of using Cloud Computing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cloud-Deployment-Models"><span class="nav-number">4.</span> <span class="nav-text">Cloud Deployment Models</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Types-of-Cloud-Computing"><span class="nav-number">5.</span> <span class="nav-text">Types of Cloud Computing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Amazon-Web-Services-AWS-is-a-Market-Leader"><span class="nav-number">6.</span> <span class="nav-text">Amazon Web Services (AWS) is a Market Leader</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cloud-Based-Products"><span class="nav-number">7.</span> <span class="nav-text">Cloud-Based Products</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Container-Scaling"><span class="nav-number">1.</span> <span class="nav-text">Container Scaling</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-is-Kubernetes-required"><span class="nav-number">2.</span> <span class="nav-text">Why is Kubernetes required?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-Kubernetes"><span class="nav-number">3.</span> <span class="nav-text">What is Kubernetes?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Benefits-of-using-Kubernetes"><span class="nav-number">4.</span> <span class="nav-text">Benefits of using Kubernetes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Key-Terms"><span class="nav-number">5.</span> <span class="nav-text">Key Terms</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kubernetes-Cluster-Architecture"><span class="nav-number">6.</span> <span class="nav-text">Kubernetes Cluster Architecture</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reliability"><span class="nav-number">7.</span> <span class="nav-text">Reliability</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Service-and-Volumes"><span class="nav-number">8.</span> <span class="nav-text">Service and Volumes</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -220,7 +223,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://cyanky.github.io/posts/2511a43a/">
+    <link itemprop="mainEntityOfPage" href="https://cyanky.github.io/posts/9acacb00/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -233,12 +236,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Cloud Computing | Jingchen XIE">
-      <meta itemprop="description" content="Cloud Computing is the delivery of IT resources over the Internet.">
+      <meta itemprop="name" content="Kubernetes | Jingchen XIE">
+      <meta itemprop="description" content="Kubernetes is one of the most popular orchestration system for containers developed by Google and open sourced in 2014. It can automate many of the manual operations of deployment and scaling of a containerized application.">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Cloud Computing
+          Kubernetes
         </h1>
 
         <div class="post-meta-container">
@@ -250,7 +253,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-06-29 22:04:49 / Modified: 22:06:53" itemprop="dateCreated datePublished" datetime="2022-06-29T22:04:49+09:00">2022-06-29</time>
+      <time title="Created: 2022-07-02 23:36:32 / Modified: 23:49:31" itemprop="dateCreated datePublished" datetime="2022-07-02T23:36:32+09:00">2022-07-02</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -258,7 +261,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Server-Deplovment/" itemprop="url" rel="index"><span itemprop="name">Server Deplovment</span></a>
+          <a href="/categories/Server-Deployment/" itemprop="url" rel="index"><span itemprop="name">Server Deployment</span></a>
         </span>
     </span>
 
@@ -269,18 +272,18 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Symbols count in article: </span>
-      <span>2.3k</span>
+      <span>4.5k</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>2 mins.</span>
+      <span>4 mins.</span>
     </span>
 </div>
 
-            <div class="post-description">Cloud Computing is the delivery of IT resources over the Internet.</div>
+            <div class="post-description">Kubernetes is one of the most popular orchestration system for containers developed by Google and open sourced in 2014. It can automate many of the manual operations of deployment and scaling of a containerized application.</div>
         </div>
       </header>
 
@@ -288,88 +291,63 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="Cloud-Computing"><a href="#Cloud-Computing" class="headerlink" title="Cloud Computing"></a>Cloud Computing</h2><p>Cloud Computing is the delivery of IT resources over the Internet. The cloud is like a virtual data center accessible via the Internet that allows you to manage:</p>
-<ul>
-<li>Storage services like databases</li>
-<li>Servers, compute power, networking</li>
-<li>Analytics, artificial intelligence, augmented reality</li>
-<li>Security services for data and applications</li>
+        <h3 id="Container-Scaling"><a href="#Container-Scaling" class="headerlink" title="Container Scaling"></a>Container Scaling</h3><ol>
+<li><strong>Vertical scaling</strong> Increasing the host machine’s hardware resources on which the container is running is called <em>vertical scaling</em>. Earlier, we learned that a container has no resource constraints and can use as much of a given resource as the host’s kernel scheduler allows. This approach’s downside is that<ul>
+<li>It is challenging to scale up-or-down as the demand changes automatically.</li>
+<li>Larger host machines can be more expensive than smaller machines, so it is a loss if the machine is underutilized. Also, running an application in a single container alone doesn’t leverage the full power of containerization.</li>
 </ul>
-<h2 id="Characteristics-of-Cloud-Computing"><a href="#Characteristics-of-Cloud-Computing" class="headerlink" title="Characteristics of Cloud Computing"></a>Characteristics of Cloud Computing</h2><ul>
-<li>Pay as you go - You pay only for what you use and only when your code runs.</li>
-<li>Autoscaling - The number of active servers can grow or shrink based on demand.</li>
-<li>Serverless - Allows you to write and deploy code without having to worry about the underlying infrastructure.</li>
-</ul>
-<h2 id="Benefits-of-using-Cloud-Computing"><a href="#Benefits-of-using-Cloud-Computing" class="headerlink" title="Benefits of using Cloud Computing"></a>Benefits of using Cloud Computing</h2><p>There are several benefits to the cloud.</p>
-<ul>
-<li>Stop guessing about capacity.</li>
-<li>Avoid huge capital investments up front.</li>
-<li>Pay for only what you use.</li>
-<li>Scale globally in minutes.</li>
-<li>Deliver faster.</li>
-</ul>
-<h2 id="Cloud-Deployment-Models"><a href="#Cloud-Deployment-Models" class="headerlink" title="Cloud Deployment Models"></a>Cloud Deployment Models</h2><ol>
-<li><strong>Public Cloud:</strong> A public cloud makes resources available over the Internet to the general public.</li>
-<li><strong>Private Cloud:</strong> A private cloud is a proprietary network that supplies services to a limited number of people.</li>
-<li><strong>Hybrid Cloud:</strong> A hybrid model contains a combination of both a public and a private cloud. The hybrid model is a growing trend in the industry for those organizations that have been slow to adopt the cloud due to being in a heavily regulated industry. The hybrid model gives organizations the flexibility to slowly migrate to the cloud.</li>
+</li>
+<li><strong>Horizontal scaling</strong> Running multiple instances of the same application across multiple machines is called <em>horizontal scaling</em>. It is effortless to run multiple containers based on the same image</li>
 </ol>
-<h2 id="Types-of-Cloud-Computing"><a href="#Types-of-Cloud-Computing" class="headerlink" title="Types of Cloud Computing"></a>Types of Cloud Computing</h2><ol>
-<li><strong>Infrastructure-as-a-Service (IaaS):</strong> The provider supplies virtual server instances, storage, and mechanisms for you to manage servers.</li>
-<li><strong>Platform-as-a-Service (PaaS):</strong> A platform of development tools hosted on a provider’s infrastructure.</li>
-<li><strong>Software-as-a-Service (SaaS):</strong> A software application that runs over the Internet and is managed by the service provider.</li>
+<h3 id="Why-is-Kubernetes-required"><a href="#Why-is-Kubernetes-required" class="headerlink" title="Why is Kubernetes required?"></a>Why is Kubernetes required?</h3><p>The containers that you created were running locally on your machine. There are limitations to containerizing applications locally, such as:</p>
+<ol>
+<li><strong>Scaling</strong> - You cannot automatically scale up-or-down the resources (number of containers) or application usage requirements based on the incoming traffic.</li>
+<li><strong>Updates</strong> - Assume you have manually scaled up your containers horizontally on multiple hosts. Now, develop a patch&#x2F;update in your application. It will be difficult for you to update the patch in each container manually.</li>
+<li><strong>Elasticity</strong> - Your local computer&#x2F;on-premise servers may not suffice the hardware requirements for running too many containers parallelly.</li>
 </ol>
-<h2 id="Amazon-Web-Services-AWS-is-a-Market-Leader"><a href="#Amazon-Web-Services-AWS-is-a-Market-Leader" class="headerlink" title="Amazon Web Services (AWS) is a Market Leader"></a>Amazon Web Services (AWS) is a Market Leader</h2><p>There are several popular cloud platforms like AWS, Azure, and GCP; however, Amazon Web Services (AWS) is one of the popular public cloud infrastructures. AWS routinely adds new services and invests billions of dollars in the overall platform and infrastructure.</p>
-<h2 id="Cloud-Based-Products"><a href="#Cloud-Based-Products" class="headerlink" title="Cloud-Based Products"></a>Cloud-Based Products</h2><p>Amazon Web Services offers a broad set of global cloud-based products.</p>
+<p>The solution to auto-scaling problems #1 and #2 above is to use the Kubernetes. The solution to problem #3 above is to use elastic (unlimited) resources on the cloud.</p>
+<h3 id="What-is-Kubernetes"><a href="#What-is-Kubernetes" class="headerlink" title="What is Kubernetes?"></a>What is Kubernetes?</h3><p><a target="_blank" rel="noopener" href="https://kubernetes.io/">Kubernetes</a> is one of the most popular orchestration system for containers developed by Google and open sourced in 2014. It can automate many of the manual operations of deployment and scaling of a containerized application. A few of the benefits of using Kubernetes (k8s) are:</p>
 <ul>
-<li>Analytics<ul>
-<li>Quick Sight</li>
-<li>Athena</li>
-<li>Redshift</li>
+<li>The ease of scaling the container instances up or down to meet varying demands (horizontal scaling).</li>
+<li>It can balance loads, and perform health checks.</li>
+<li>It helps in setting-up inter-container communication (networking).</li>
 </ul>
-</li>
-<li>Application integration<ul>
-<li>Simple Queue Service (SQS)</li>
-<li>Simple Notification Service (SNS)</li>
+<p>Kubernetes was born out of the lessons learned in the <a target="_blank" rel="noopener" href="https://queue.acm.org/detail.cfm?id=2898444">Scaling containerized apps at Google</a>.</p>
+<h3 id="Benefits-of-using-Kubernetes"><a href="#Benefits-of-using-Kubernetes" class="headerlink" title="Benefits of using Kubernetes"></a>Benefits of using Kubernetes</h3><p>A few more benefits of using Kubernetes are:</p>
+<ul>
+<li>High availability architecture</li>
+<li>Auto-scaling</li>
+<li>Rich Ecosystem</li>
+<li>Service discovery</li>
+<li>Container health management</li>
+<li>Secrets and configuration management The downside of these features is the high complexity and learning curve of Kubernetes.</li>
 </ul>
-</li>
-<li>Cost management<ul>
-<li>AWS Budgets</li>
+<h3 id="Key-Terms"><a href="#Key-Terms" class="headerlink" title="Key Terms"></a>Key Terms</h3><ul>
+<li><em>Cluster</em>: A group of machines running Kubernetes</li>
+<li><em>Master</em>: The system which controls a Kubernetes cluster. You will typically interact with the master when you communicate with a cluster. The master includes an api, scheduler, and management daemon.</li>
+<li><em>Nodes</em>: The machines in a cluster. These can be virtual, physical, or a combination of both.</li>
+<li><a target="_blank" rel="noopener" href="https://kubernetes.io/docs/concepts/workloads/pods/"><em>Pods</em></a>: It is considered as the <em>smallest unit</em> in a cluster. It is a logical group of containers on a node that runs a particular module&#x2F;application. A pod consists of one or more containers, shared storage resources, and a unique IP address. Note that all the containers within a Pod share the namespaces and filesystem volumes. Pods are not persistent, and may be brought up and down by the master during scaling.</li>
 </ul>
-</li>
-<li>Compute services<ul>
-<li>Elastic Cloud Compute (EC2)</li>
-<li>Lambda</li>
-<li>Elastic Beanstalk</li>
-</ul>
-</li>
-<li>Database management services<ul>
-<li>MySQL</li>
-<li>Oracle</li>
-<li>SQLServer</li>
-<li>DynamoDB</li>
-<li>MongoDB</li>
-</ul>
-</li>
-<li>Developer tools<ul>
-<li>Cloud 9</li>
-<li>Code Pipeline</li>
-</ul>
-</li>
-<li>Security services<ul>
-<li>Key Management Service (KMS)</li>
-<li>Shield</li>
-<li>Identity and Access Management (IAM)</li>
-</ul>
-</li>
-<li>Additional Services<ul>
-<li>Blockchain</li>
-<li>Machine Learning</li>
-<li>Computer Vision</li>
-<li>Internet of Things (IoT)</li>
-<li>AR&#x2F;VR</li>
-</ul>
-</li>
-</ul>
+<h3 id="Kubernetes-Cluster-Architecture"><a href="#Kubernetes-Cluster-Architecture" class="headerlink" title="Kubernetes Cluster Architecture"></a>Kubernetes Cluster Architecture</h3><p>The core of Kubernetes is the cluster. A cluster comprises several node machines for running containerized applications and a master for managing the nodes. Each node is capable of running multiple <em>pods</em> (a group of containers). Therefore, each node has a container runtime, such as Docker, installed on it.</p>
+<p>The diagram below shows a simplistic view of a Kubernetes cluster.</p>
+<p><img src="https://video.udacity-data.com/topher/2019/September/5d71adc3_image2/image2.png" alt="Kubernetes clusters consist of a master system, nodes and pods"></p>
+<p>Kubernetes clusters consist of a master system, nodes, pods, and services.</p>
+<p>Note the following points about the Kubernetes architecture:</p>
+<ol>
+<li>Nodes are managed by the Master system. <strong>Each node in the cluster must have a container runtime, such as Docker.</strong></li>
+<li>A given node can host multiple PODs.</li>
+<li>The PODs (a logical group of containers) are running independent modules of an application. In the last lesson, it was a single container running a module.</li>
+<li>The PODs are replicated across multiple nodes.</li>
+</ol>
+<p>You can view a detailed version of the cluster architecture <a target="_blank" rel="noopener" href="https://kubernetes.io/docs/concepts/overview/components/">here</a>.</p>
+<h3 id="Reliability"><a href="#Reliability" class="headerlink" title="Reliability"></a>Reliability</h3><p>In the cluster diagram shown above, each POD runs a specific module (App A, App B, App C…) of an application. Moreover, the PODs are not attached to a specific node (host). Instead, multiple nodes are hosting similar PODs. This architecture mitigates the chances of a single point of failure, and thus provides high availability. The master system brings a layer of abstraction for the external client&#x2F;application.</p>
+<h3 id="Service-and-Volumes"><a href="#Service-and-Volumes" class="headerlink" title="Service and Volumes"></a>Service and Volumes</h3><p>All pods that are running the same application module share storage resources. Further, all the containers within a pod share the namespaces and filesystem volumes. Hence, in order to have a persistent way to store data, volumes can be attached to pods.</p>
+<p>Whereas, in order to have a persistent way to communicate with ephemeral pods, a higher-level service abstraction is provided, called <em>Kubernetes Service</em>.</p>
+<blockquote>
+<p><em>Service</em>: An abstraction of a set of pods and interface for how to interact with the pods</p>
+</blockquote>
+<p><img src="https://video.udacity-data.com/topher/2019/September/5d71ad55_l2-deployment-2/l2-deployment-2.png" alt="Kubernetes pods with a connected service and volume"></p>
+<p>Kubernetes pods with a connected service and attached volume</p>
 
     </div>
 
@@ -387,7 +365,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="https://cyanky.github.io/posts/2511a43a/" title="Cloud Computing">https://cyanky.github.io/posts/2511a43a/</a>
+      <a href="https://cyanky.github.io/posts/9acacb00/" title="Kubernetes">https://cyanky.github.io/posts/9acacb00/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC</a> unless stating additionally.
@@ -396,21 +374,18 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/Server-Deplovment/" rel="tag"># Server Deplovment</a>
+              <a href="/tags/Server-Deployment/" rel="tag"># Server Deployment</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/posts/f5f9fa9b/" rel="prev" title="Docker">
-                  <i class="fa fa-chevron-left"></i> Docker
+                <a href="/posts/edffd6ed/" rel="prev" title="AWS_Service_Part1">
+                  <i class="fa fa-chevron-left"></i> AWS_Service_Part1
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/posts/edffd6ed/" rel="next" title="AWS_Service_Part1">
-                  AWS_Service_Part1 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
