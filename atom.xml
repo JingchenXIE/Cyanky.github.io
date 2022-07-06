@@ -6,7 +6,7 @@
   <link href="https://cyanky.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyanky.github.io/"/>
-  <updated>2022-07-03T14:23:23.417Z</updated>
+  <updated>2022-07-06T03:20:39.103Z</updated>
   <id>https://cyanky.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CI/CD by AWS Services</title>
+    <link href="https://cyanky.github.io/posts/d7d610e1/"/>
+    <id>https://cyanky.github.io/posts/d7d610e1/</id>
+    <published>2022-07-06T03:15:15.000Z</published>
+    <updated>2022-07-06T03:20:39.103Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="CodeBuild-An-AWS-Continuous-Integration-service"><a href="#CodeBuild-An-AWS-Continuous-Integration-service" class="headerlink" title="CodeBuild: An AWS Continuous Integration service"></a>CodeBuild: An AWS Continuous Integration service</h1><h2 id="Continuous-Integration-The-first-part-of-Continuous-Delivery"><a href="#Continuous-Integration-The-first-part-of-Continuous-Delivery" class="headerlink" title="Continuous Integration: The first part of Continuous Delivery"></a>Continuous Integration: The first part of Continuous Delivery</h2><ul><li>Continuous Integration: frequent check-ins to a central repository which trigger automated builds and tests. In this stage, we need to code, compile, test and package.</li><li>CodeBuild: A fully managed continuous integration system offered by AWS</li><li>Codebuild can be added as an action to a CodePipeline stage</li><li>General information about CodeBuild can be found <a href="https://aws.amazon.com/codebuild/">here</a>.</li><li>AWS instructions on how to create a pipeline with CodeBuild and CodePipeline can be found <a href="https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-create-pipeline.html">here</a>.</li><li>Documentation on Buildspec files can be found <a href="https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html">here</a></li></ul><p>The instructions that a CodeBuild stage will follow are put in a build spec file named <code>buildspec.yml</code>. This file contains all of the commands that the build will run and any related settings. Amazon supplies <a href="https://docs.aws.amazon.com/codebuild/latest/userguide/samples.html">CodeBuild samples</a>, you can see examples of build spec files there. The sample for a simple Docker custom image has the build spec:</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">version:</span> <span class="number">0.2</span></span><br><span class="line"><span class="symbol"></span></span><br><span class="line"><span class="symbol">phases:</span></span><br><span class="line"><span class="symbol">  install:</span></span><br><span class="line"><span class="symbol">    commands:</span></span><br><span class="line">      - nohup <span class="keyword">/usr/</span>local<span class="keyword">/bin/</span>dockerd --<span class="attr">host</span><span class="operator">=</span>unix:<span class="comment">///var/run/docker.sock --host=tcp://127.0.0.1:2375 --storage-driver=overlay2&amp;</span></span><br><span class="line">      - timeout <span class="number">15</span> sh -c <span class="string">&quot;until docker info; do echo .; sleep 1; done&quot;</span></span><br><span class="line"><span class="symbol">  pre_build:</span></span><br><span class="line"><span class="symbol">    commands:</span></span><br><span class="line">      - docker build -t helloworld .</span><br><span class="line"><span class="symbol">  build:</span></span><br><span class="line"><span class="symbol">    commands:</span></span><br><span class="line">      - docker images</span><br><span class="line">      - docker run helloworld echo <span class="string">&quot;Hello, World!&quot;</span> </span><br></pre></td></tr></table></figure><p>You can see that it is divided into the phases ‘install’, ‘pre_build’, and ‘build’. Each phase contains commands, which are the same commands you would use to run Docker locally. You can read about the build spec syntax <a href="https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html#build-spec-ref-syntax">here</a></p><h1 id="CodePipeline"><a href="#CodePipeline" class="headerlink" title="CodePipeline"></a>CodePipeline</h1><h2 id="Continuous-Delivery-Automating-the-preparation-of-code-for-release"><a href="#Continuous-Delivery-Automating-the-preparation-of-code-for-release" class="headerlink" title="Continuous Delivery: Automating the preparation of code for release"></a>Continuous Delivery: Automating the preparation of code for release</h2><h2 id="Continuous-Delivery"><a href="#Continuous-Delivery" class="headerlink" title="Continuous Delivery"></a>Continuous Delivery</h2><ul><li><p>Used for small incremental releases or frequent releases</p></li><li><p>Automates code compilation, testing and packaging</p></li><li><p>May involve human QA before final release or automated release to production</p></li><li><h2 id="CodePipeline-1"><a href="#CodePipeline-1" class="headerlink" title="CodePipeline"></a>CodePipeline</h2><ul><li>Controls the release process through user defined pipelines</li><li>Pipelines are created either through the CodePipeline console or using awscli</li><li>Pipelines watch a source code repository, changes to this repository trigger pipeline action</li><li>Pipelines are made up of stages</li><li>Each stage consists of one or more actions</li><li>There are actions to define the source repository, as well as instructions for testing, building, deploying and options for approval</li><li>Pipelines can be managed and viewed in the <a href="https://us-east-2.console.aws.amazon.com/codesuite/codepipeline/pipelines/">CodePipeline console</a></li></ul></li></ul>]]></content>
+    
+    
+    <summary type="html">CodeBuild &amp; CodePipeline</summary>
+    
+    
+    
+    <category term="Server Deplovment" scheme="https://cyanky.github.io/categories/Server-Deplovment/"/>
+    
+    
+    <category term="Server Deplovment" scheme="https://cyanky.github.io/tags/Server-Deplovment/"/>
+    
+  </entry>
   
   <entry>
     <title>AWS-CloudFormation</title>
