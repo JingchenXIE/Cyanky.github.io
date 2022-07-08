@@ -27,7 +27,7 @@
 <meta property="og:description" content="Hypertext Transfer Protocol (HTTP) is a protocol that provides a standardized way for computers to communicate with each other. It has been the foundation for data communication over the internet sinc">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-07-08T14:23:50.000Z">
-<meta property="article:modified_time" content="2022-07-08T14:30:21.797Z">
+<meta property="article:modified_time" content="2022-07-08T14:37:31.904Z">
 <meta property="article:author" content="Jingchen XIE">
 <meta property="article:tag" content="Server Deployment">
 <meta name="twitter:card" content="summary">
@@ -144,7 +144,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Features"><span class="nav-number">1.</span> <span class="nav-text">Features:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Elements"><span class="nav-number">2.</span> <span class="nav-text">Elements:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Side-Note-URI-vs-URL"><span class="nav-number">2.1.</span> <span class="nav-text">Side Note: URI vs URL</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTTP"><span class="nav-number">1.</span> <span class="nav-text">HTTP</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Features"><span class="nav-number">1.1.</span> <span class="nav-text">Features:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Elements"><span class="nav-number">1.2.</span> <span class="nav-text">Elements:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Side-Note-URI-vs-URL"><span class="nav-number">1.2.1.</span> <span class="nav-text">Side Note: URI vs URL</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTTP-Requests"><span class="nav-number">2.</span> <span class="nav-text">HTTP Requests</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Elements-1"><span class="nav-number">2.1.</span> <span class="nav-text">Elements:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP-Request-Methods"><span class="nav-number">2.2.</span> <span class="nav-text">HTTP Request Methods</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTTP-Response"><span class="nav-number">3.</span> <span class="nav-text">HTTP Response</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Elements-2"><span class="nav-number">3.1.</span> <span class="nav-text">Elements:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Status-Codes"><span class="nav-number">3.2.</span> <span class="nav-text">Status Codes:</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Codes-fall-into-five-categories"><span class="nav-number">3.2.0.1.</span> <span class="nav-text">Codes fall into five categories:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Common-Codes"><span class="nav-number">3.2.0.2.</span> <span class="nav-text">Common Codes:</span></a></li></ol></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -250,7 +250,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-07-08 23:23:50 / Modified: 23:30:21" itemprop="dateCreated datePublished" datetime="2022-07-08T23:23:50+09:00">2022-07-08</time>
+      <time title="Created: 2022-07-08 23:23:50 / Modified: 23:37:31" itemprop="dateCreated datePublished" datetime="2022-07-08T23:23:50+09:00">2022-07-08</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -269,14 +269,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Symbols count in article: </span>
-      <span>2.3k</span>
+      <span>3.8k</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>2 mins.</span>
+      <span>3 mins.</span>
     </span>
 </div>
 
@@ -288,16 +288,14 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p><strong>Hypertext Transfer Protocol (HTTP)</strong> is a protocol that provides a standardized way for computers to communicate with each other. It has been the foundation for data communication over the internet since 1990 and is integral to understanding how client-server communication functions.</p>
-<p>In this lesson, we’ll discuss key features and elements of HTTP.</p>
-<h2 id="Features"><a href="#Features" class="headerlink" title="Features:"></a>Features:</h2><ul>
+        <h1 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h1><h2 id="Features"><a href="#Features" class="headerlink" title="Features:"></a>Features:</h2><ul>
 <li><strong>Connectionless:</strong> When a request is sent, the client opens the connection; once a response is received, the client closes the connection. The client and server only maintain a connection during the response and request. Future responses are made on a new connection.</li>
 <li><strong>Stateless:</strong> There is no dependency between successive requests.</li>
 <li><strong>Not Sessionless:</strong> Utilizing headers and cookies, sessions can be created to allow each HTTP request to share the same context.</li>
 <li><strong>Media Independent:</strong> Any type of data can be sent over HTTP as long as both the client and server know how to handle the data format. In our case, we’ll use JSON.</li>
 </ul>
 <h2 id="Elements"><a href="#Elements" class="headerlink" title="Elements:"></a>Elements:</h2><ul>
-<li><p>Universal Resource Identifiers (URIs):</p>
+<li><p>Universal Resource Identifiers (URIs): </p>
 <p>An example URI is</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="regexp">//</span>www.example.com<span class="regexp">/tasks/</span>term=homework</span><br></pre></td></tr></table></figure>
 
@@ -325,6 +323,57 @@
 <li><a target="_blank" rel="noopener" href="https://www.ietf.org/rfc/rfc3986.txt">RFC 3986</a>, published by the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force">Internet Engineering Taskforce</a> (this one is rather hefty and more of an official reference than a reader-friendly explanation)</li>
 </ul>
 </blockquote>
+<h1 id="HTTP-Requests"><a href="#HTTP-Requests" class="headerlink" title="HTTP Requests"></a>HTTP Requests</h1><p>HTTP requests are sent from the client to the server to initiate some operation. In addition to the URL, HTTP requests have other elements to specify the requested resource.</p>
+<h2 id="Elements-1"><a href="#Elements-1" class="headerlink" title="Elements:"></a>Elements:</h2><ul>
+<li><strong>Method:</strong> Defines the operation to be performed</li>
+<li><strong>Path:</strong> The URL of the resource to be fetched, excluding the scheme and host</li>
+<li><strong>HTTP Version</strong></li>
+<li><strong>Headers:</strong> optional information, such as Accept-Language</li>
+<li><strong>Body:</strong> optional information, usually for methods such as POST and PATCH, which contain the resource being sent to the server</li>
+</ul>
+<h2 id="HTTP-Request-Methods"><a href="#HTTP-Request-Methods" class="headerlink" title="HTTP Request Methods"></a>HTTP Request Methods</h2><p>Different request methods indicate different operations to be performed. It’s essential to attend to this to correctly format your requests and properly structure an API.</p>
+<ul>
+<li><strong>GET:</strong> ONLY retrieves information for the requested resource of the given URI</li>
+<li><strong>POST:</strong> Send data to the server to create a new resource.</li>
+<li><strong>PUT:</strong> Replaces all of the representation of the target resource with the request data</li>
+<li><strong>PATCH:</strong> Partially modifies the representation of the target resource with the request data</li>
+<li><strong>DELETE:</strong> Removes all of the representation of the resource specified by the URI</li>
+<li><strong>OPTIONS:</strong> Sends the communication options for the requested resource</li>
+</ul>
+<p>After the request has been received by the server and processed, the server returns an HTTP response message to the client. The response informs the client of the outcome of the requested operation.</p>
+<h1 id="HTTP-Response"><a href="#HTTP-Response" class="headerlink" title="HTTP Response"></a>HTTP Response</h1><h2 id="Elements-2"><a href="#Elements-2" class="headerlink" title="Elements:"></a>Elements:</h2><ul>
+<li><p><strong>Status Code &amp; Status Message</strong></p>
+</li>
+<li><p><strong>HTTP Version</strong></p>
+</li>
+<li><p>Headers:</p>
+<p>similar to the request headers, provides information about the response and resource representation. Some common headers include:</p>
+<ul>
+<li><strong>Date</strong></li>
+<li><strong>Content-Type:</strong> the media type of the body of the request</li>
+</ul>
+</li>
+<li><p><strong>Body:</strong> optional data containing the requested resource</p>
+</li>
+</ul>
+<h2 id="Status-Codes"><a href="#Status-Codes" class="headerlink" title="Status Codes:"></a>Status Codes:</h2><p>As an API developer, it’s important to send the correct status code. As a developer using an API, the status codes—particularly the error codes—are important for understanding what caused an error and how to proceed.</p>
+<h4 id="Codes-fall-into-five-categories"><a href="#Codes-fall-into-five-categories" class="headerlink" title="Codes fall into five categories:"></a>Codes fall into five categories:</h4><ul>
+<li><code>1xx</code> Informational</li>
+<li><code>2xx</code> Success</li>
+<li><code>3xx</code> Redirection</li>
+<li><code>4xx</code> Client Error</li>
+<li><code>5xx</code> Server Error</li>
+</ul>
+<h4 id="Common-Codes"><a href="#Common-Codes" class="headerlink" title="Common Codes:"></a>Common Codes:</h4><ul>
+<li><code>200</code>: OK</li>
+<li><code>201</code>: Created</li>
+<li><code>304</code>: Not Modified</li>
+<li><code>400</code>: Bad Request</li>
+<li><code>401</code>: Unauthorized</li>
+<li><code>404</code>: Not Found</li>
+<li><code>405</code>: Method Not Allowed</li>
+<li><code>500</code>: Internal Server Error</li>
+</ul>
 
     </div>
 
@@ -394,13 +443,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="Symbols count total">24k</span>
+    <span title="Symbols count total">26k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">22 mins.</span>
+    <span title="Reading time total">23 mins.</span>
   </span>
 </div><script color="0,0,255" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
 
